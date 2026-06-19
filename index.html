@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<!-- ████ LOBBY ████ -->
+<!-- LOBBY -->
 <div id="screen-lobby" class="screen active">
   <div class="lobby-bg"><div class="felt-tex"></div><div id="particles"></div></div>
   <header class="lobby-header">
@@ -30,7 +30,7 @@
   </div>
 </div>
 
-<!-- ████ GAME ████ -->
+<!-- GAME -->
 <div id="screen-game" class="screen">
   <header class="g-header">
     <button class="btn-ico" id="btn-home">⌂</button>
@@ -40,7 +40,7 @@
   <div id="g-container"></div>
 </div>
 
-<!-- ████ GLOBAL STATS ████ -->
+<!-- GLOBAL STATS -->
 <div id="screen-gstats" class="screen">
   <header class="g-header">
     <button class="btn-ico" id="btn-back-gs">←</button>
@@ -54,8 +54,8 @@
   <input type="file" id="imp-file" accept=".json" style="display:none"/>
 </div>
 
-<!-- ████ HELP MODAL ████ -->
-<div id="help-modal" class="modal-ov" hidden>
+<!-- HELP MODAL — oculto por defecto con display:none en el style -->
+<div id="help-modal" class="modal-ov" style="display:none">
   <div class="modal-box">
     <div class="modal-hdr">
       <h3 id="help-title">Ayuda</h3>
@@ -65,13 +65,13 @@
   </div>
 </div>
 
-<!-- ████ TOAST ████ -->
+<!-- TOAST -->
 <div id="toast" class="toast"></div>
 
 <!-- CORE -->
 <script src="js/core/deck.js"></script>
 <script src="js/core/stats.js"></script>
-<!-- GAMES (se agregan en lotes 1-3) -->
+<!-- GAMES -->
 <script src="js/games/adivina.js"></script>
 <script src="js/games/blackjack.js"></script>
 <script src="js/games/memory.js"></script>
